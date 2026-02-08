@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="material-icons">music_note</i>
+                <span>Music Pro</span>
+            </div>
+            
+            <nav class="nav-links">
+                <ul>
+                    <li class="active">
+                        <i class="material-icons">home</i>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">search</i>
+                        <span>Search</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">library_music</i>
+                        <span>Your Library</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="library-section">
+                <h3>YOUR PLAYLISTS</h3>
+                <ul>
+                    <li onclick="playPlaylist('45IwyKwP7Ub0AG8oCTQiyI')">
+                        <i class="material-icons">add_box</i>
+                        <span>Create Playlist</span>
+                    </li>
+                    <li onclick="playPlaylist('45IwyKwP7Ub0AG8oCTQiyI')">
+                        <i class="material-icons">favorite</i>
+                        <span>Liked Songs</span>
+                    </li>
+                    <li onclick="playPlaylist('45IwyKwP7Ub0AG8oCTQiyI')">
+                        <span>Telugu Melody Hits</span>
+                    </li>
+                    <li onclick="playPlaylist('37i9dQZF1DXcBWIGoYBM5M')">
+                        <span>Driving Mix</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="install-app">
+                <i class="material-icons">arrow_circle_down</i>
+                <span>Install App</span>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-bar">
+                <div class="nav-arrows">
+                    <button class="circle-btn" onclick="history.back()"><i class="material-icons">chevron_left</i></button>
+                    <button class="circle-btn" onclick="history.forward()"><i class="material-icons">chevron_right</i></button>
+                </div>
+                <div class="user-menu">
+                    <button class="upgrade-btn">Explore Premium</button>
+                    <div class="user-profile-container">
+                        <div class="user-profile">
+                            <i class="material-icons">account_circle</i>
+                            <span>Lohith</span>
+                            <i class="material-icons" style="font-size: 16px; margin-left: 4px;">arrow_drop_down</i>
+                        </div>
+                        
+                        <!-- Dropdown Menu -->
+                        <div class="profile-dropdown">
+                            <div class="dropdown-header">
+                                <div class="user-avatar-large">L</div>
+                                <div class="user-details">
+                                    <span class="user-name">Lohith</span>
+                                    <span class="view-account">View Account</span>
+                                </div>
+                            </div>
+                            <ul class="dropdown-links">
+                                <li>
+                                    <i class="material-icons">person</i>
+                                    <span>Profile</span>
+                                </li>
+                                <li>
+                                    <i class="material-icons">settings</i>
+                                    <span>Settings</span>
+                                </li>
+                                <li>
+                                    <i class="material-icons">equalizer</i>
+                                    <span>Stats</span>
+                                </li>
+                                <div class="divider"></div>
+                                <li>
+                                    <span>Log out</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area">
+                
+                <!-- HOME VIEW -->
+                <section id="view-home" class="view-section active">
+                    <div class="hero-section">
+                        <h1 id="greeting">Good Evening</h1>
+                        <div class="spotify-embed-wrapper">
+                            <iframe id="spotify-player" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/45IwyKwP7Ub0AG8oCTQiyI?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="recommendations">
+                        <h2>Made For You</h2>
+                        <div class="cards-grid">
+                            <!-- Telugu Melody (Default) -->
+                            <div class="card" onclick="playPlaylist('45IwyKwP7Ub0AG8oCTQiyI')">
+                                <img src="https://i.pinimg.com/736x/cf/03/e3/cf03e3f7bd91bc3438eb92c02b183a91.jpg" alt="Telugu Melody">
+                                <h3>Telugu Melody</h3>
+                                <p>Devi Sri Prasad, Thaman S and more</p>
+                            </div>
+                            
+                            <!-- Tollywood Top 50 -->
+                            <div class="card" onclick="playPlaylist('37i9dQZEVXbN1Fw1vC7P')">
+                                <img src="https://i.pinimg.com/736x/c7/42/c5/c742c5ff809a492d323238c67314d914.jpg" alt="Top 50">
+                                <h3>Tollywood Hot 50</h3>
+                                <p>The hottest tracks in AP & Telangana</p>
+                            </div>
+
+                            <!-- A.R. Rahman -->
+                            <div class="card" onclick="playPlaylist('37i9dQZF1DZ06evO1p4f')">
+                                <img src="https://i.scdn.co/image/ab6761610000e5ebb19af0ea736c6228d6eb539c" alt="ARR">
+                                <h3>This Is A.R. Rahman</h3>
+                                <p>The Mozart of Madras essentials.</p>
+                            </div>
+
+                            <!-- Sid Sriram -->
+                            <div class="card" onclick="playPlaylist('37i9dQZF1DZ06evO2Or9C')">
+                                <img src="https://i.pinimg.com/1200x/28/ac/13/28ac1370718222b1f41bcee2e3328f13.jpg" alt="Sid Sriram">
+                                <h3>Sid Sriram Hits</h3>
+                                <p>Soulful melodies for your heart.</p>
+                            </div>
+                            
+                            <!-- Party Mix -->
+                            <div class="card" onclick="playPlaylist('37i9dQZF1DXcBWIGoYBM5M')">
+                                <img src="https://i.pinimg.com/736x/f5/6a/fe/f56afe6d936228c2d0c2cf0b13cebf93.jpg" alt="Party">
+                                <h3>Tollywood Party</h3>
+                                <p>Dance beats to get you moving.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SEARCH VIEW -->
+                <section id="view-search" class="view-section hidden">
+                    <h1>Search</h1>
+                    <div class="search-bar-container">
+                        <i class="material-icons">search</i>
+                        <input type="text" id="search-input" placeholder="What do you want to play?">
+                    </div>
+                    
+                    <h2 style="margin-top: 30px;">Browse All</h2>
+                    <div class="cards-grid">
+                        <div class="card genre-card" style="background-color: #E61E32;" onclick="playPlaylist('37i9dQZF1DX0XUfTFmBRE1')">
+                            <h3>Pop</h3>
+                            <img src="https://t.scdn.co/images/0a74d96e091a495bb09c0d83210910c3" alt="Pop">
+                        </div>
+                        <div class="card genre-card" style="background-color: #1E3264;" onclick="playPlaylist('37i9dQZF1DX6J5NfMJS675')">
+                            <h3>Hip-Hop</h3>
+                            <img src="https://i.scdn.co/image/ab67706f000000039249b35f23fb696b4bfa3505" alt="Hip">
+                        </div>
+                        <div class="card genre-card" style="background-color: #8D67AB;" onclick="playPlaylist('37i9dQZF1DXdOEFt9nW0eE')">
+                            <h3>Bollywood</h3>
+                            <img src="https://i.scdn.co/image/ab67706f00000003023e3e2363577d6104f26b52" alt="Belly">
+                        </div>
+                        <div class="card genre-card" style="background-color: #BC5900;" onclick="playPlaylist('37i9dQZF1DXa1e2ac1b25S')">
+                            <h3>Indie</h3>
+                            <img src="https://i.scdn.co/image/ab67706f00000003c267866380c558d19730c427" alt="Indie">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LIBRARY VIEW -->
+                <section id="view-library" class="view-section hidden">
+                    <h1>Your Library</h1>
+                    <div class="library-filters">
+                        <button class="filter-btn active">Playlists</button>
+                        <button class="filter-btn">Artists</button>
+                        <button class="filter-btn">Albums</button>
+                    </div>
+                    <div class="library-list">
+                        <div class="lib-row" onclick="playPlaylist('45IwyKwP7Ub0AG8oCTQiyI')">
+                            <img src="https://i.pinimg.com/736x/cf/03/e3/cf03e3f7bd91bc3438eb92c02b183a91.jpg" alt="Liked Songs">
+                            <div class="lib-info">
+                                <h4>Liked Songs</h4>
+                                <p>Playlist • 420 songs</p>
+                            </div>
+                        </div>
+                         <div class="lib-row" onclick="playPlaylist('37i9dQZF1DX8Uebhn9wzrS')">
+                            <img src="https://i.pinimg.com/736x/c7/42/c5/c742c5ff809a492d323238c67314d914.jpg" alt="Lofi">
+                            <div class="lib-info">
+                                <h4>Lofi Beats</h4>
+                                <p>Playlist • Spotify</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
