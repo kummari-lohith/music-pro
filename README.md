@@ -1,4 +1,4 @@
-<img width="1920" height="1370" alt="screencapture-music-pro-gamma-vercel-app-2026-02-08-23_36_37" src="https://github.com/user-attachments/assets/4ecadfc3-ccfc-47cb-a2fb-885806169a1f" /># Music Pro 🎵
+# Music Pro 🎵
 
 A premium, modern music player interface built with HTML, CSS, and JavaScript. This project replicates the high-end aesthetic of top streaming services, featuring a "Cyber-Glass" design style with neon accents and glassmorphism effects.
 
